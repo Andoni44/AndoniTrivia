@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  AndoniTrivia
+
+  Created by Andoni Da silva on 11/1/21.
+  
+*/
+
+// MARK: - Welcome view
+"go" = "¡Comencemos!";
+"welcome" = "¡Bienvenido!";
+"enter_nicks" = "Antes de nada, introducid vuestros nicks";
+"tf_placeholder" = "Escribe aquí tu nick";
+"continue" = "Continuar";
+"player_one" = "Jugador 1";
+"player_two" = "Jugador 2";
+// MARK: - Game View
+"score" = " puntuación:";
+"right" = "¡Correcta!";
+"wrong" = "Incorrecta";
+"answer" = "Tu respuesta es...";
+// MARK: - Aux Game View
+"your_turn" = "¡{$0}, te toca!";
+"ready" = "¡Estoy listo!";
+// MARK: -  Results View
+"results" = "¡Resultados del juego!";
+"again" = "¡Otra partida!";

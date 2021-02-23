@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeView" customModule="AndoniTrivia" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="Xgo-Ny-VZC" id="lGb-Ru-8tu"/>
+                <outlet property="nickTextField" destination="yUd-4e-adJ" id="tKs-Yc-Rhd"/>
+                <outlet property="playerHeaderLabel" destination="IDX-KZ-fL2" id="upp-oK-pCd"/>
+                <outlet property="playerStack" destination="ISA-Pi-qN8" id="2n8-PP-NYk"/>
+                <outlet property="subTitleLabel" destination="cNW-tc-OoI" id="JSr-JY-Tjg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeStackView" destination="gRD-0b-ZNj" id="j7z-Pa-cig"/>
+                <outlet property="welcomeTitle" destination="xwk-lS-b2a" id="tGA-PR-mXx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="ISA-Pi-qN8">
+                    <rect key="frame" x="12" y="194" width="390" height="236.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDX-KZ-fL2">
+                            <rect key="frame" x="69.5" y="0.0" width="251.5" height="110.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your nick here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yUd-4e-adJ" customClass="TriviaTF" customModule="AndoniTrivia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="186.5" width="390" height="50"/>
+                            <color key="backgroundColor" name="mainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fEP-rq-LRy"/>
+                            </constraints>
+                            <color key="textColor" name="mainButtonColor"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yUd-4e-adJ" secondAttribute="trailing" id="LTS-Jj-TFL"/>
+                        <constraint firstItem="yUd-4e-adJ" firstAttribute="leading" secondItem="ISA-Pi-qN8" secondAttribute="leading" id="QEj-Gw-kXJ"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-0b-ZNj" userLabel="Welcome Stack">
+                    <rect key="frame" x="12" y="194" width="390" height="236.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-lS-b2a">
+                            <rect key="frame" x="75" y="0.0" width="240.5" height="125.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First of all, Enter your nicks. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-tc-OoI">
+                            <rect key="frame" x="9" y="201.5" width="372" height="35"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgo-Ny-VZC" customClass="TriviaButton" customModule="AndoniTrivia" customModuleProvider="target">
+                    <rect key="frame" x="12" y="530.5" width="390" height="50"/>
+                    <color key="backgroundColor" name="mainButtonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="xFr-6k-7U4"/>
+                    </constraints>
+                    <state key="normal" title="Let`s GO!">
+                        <color key="titleColor" name="mainColor"/>
+                    </state>
+                    <connections>
+                        <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="XkY-1s-IHl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="mainColor"/>
+            <constraints>
+                <constraint firstItem="Xgo-Ny-VZC" firstAttribute="top" secondItem="gRD-0b-ZNj" secondAttribute="bottom" constant="100" id="K9B-MJ-IYh"/>
+                <constraint firstItem="ISA-Pi-qN8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Liy-gU-MYY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Xgo-Ny-VZC" secondAttribute="bottom" constant="281.5" id="UMl-4c-4Fa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xgo-Ny-VZC" secondAttribute="trailing" constant="12" id="Vk5-fk-KZQ"/>
+                <constraint firstItem="Xgo-Ny-VZC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Z9w-Ep-bPs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gRD-0b-ZNj" secondAttribute="trailing" constant="12" id="kYF-kg-nEe"/>
+                <constraint firstItem="Xgo-Ny-VZC" firstAttribute="top" secondItem="ISA-Pi-qN8" secondAttribute="bottom" constant="100" id="ks0-jZ-Znw"/>
+                <constraint firstItem="gRD-0b-ZNj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="nu3-uw-JfX"/>
+                <constraint firstItem="ISA-Pi-qN8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="nyr-bP-cP1"/>
+                <constraint firstItem="gRD-0b-ZNj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="q4F-V5-Iss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ISA-Pi-qN8" secondAttribute="trailing" constant="12" id="ug7-Hf-319"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainButtonColor">
+            <color red="1" green="0.91200000047683716" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="0.37099999189376831" green="0.375" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
